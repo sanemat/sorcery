@@ -1,7 +1,8 @@
+language: ruby
 rvm:
   - 1.9.2
 before_install:
-  - gem uninstall bundler -x
+  - gem uninstall bundler --version '1.1.0' -x
   - gem install bundler --version '~> 1.0.0'
   - bundle --version
   - gem list --local
