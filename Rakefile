@@ -42,7 +42,7 @@ require 'yard'
 YARD::Rake::YardocTask.new
 
 desc 'Default: Run all sorcery specs.'
-task :default => :all_sorcery_specs
+task :default => [:bundle, :all_sorcery_specs]
 
 desc "Run all sorcery specs"
 task :all_sorcery_specs do
