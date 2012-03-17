@@ -1,5 +1,5 @@
 rvm:
   - 1.9.2
 before_install:
-  - gem uninstall bundler
+  - gem uninstall bundler -x
   - gem install bundler --version '~> 1.0.0'
