@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 1.9.2
 before_install:
-  - rvm use @global && gem uninstall bundler -v 1.1.0
+  - rvm @default,@global do gem uninstall bundler -v 1.1.0 -x
   - gem uninstall bundler --version '1.1.0' -x
   - gem install bundler --version '~> 1.0.0'
   - bundle --version
